@@ -6,7 +6,7 @@ services:
       dockerfile: ./docker/react/Dockerfile
     image: practice-next-react
     container_name: practice-next-react
-    command: npm run dev
+    tty: true
     volumes:
       - ../react/:/app
     ports:
