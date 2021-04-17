@@ -20,7 +20,7 @@ services:
     environment:
       POSTGRES_PASSWORD: admin-pass
     ports:
-      - 5433:5432
+      - 5432:5432
 
   rails:
     build:
