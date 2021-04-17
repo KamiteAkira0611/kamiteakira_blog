@@ -6,8 +6,32 @@ services:
       dockerfile: ./docker/react/Dockerfile
     image: practice-next-react
     container_name: practice-next-react
-    tty: true
+    command: npm run dev
     volumes:
       - ../react/:/app
     ports:
       - "8080:3000"
+
+  postgres:
+    image: postgres:10.4
+    container_name: practice-next-db
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
+
+  rails:
+    build:
+      context: ../
+      dockerfile: ./docker/rails/Dockerfile
+    container_name: practice-next-rails
+    tty: true
+    command: /bin/sh -c "rm -f /app/tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - ../rails:/app
+      - ../rails/vendor/bundle:/app/vendor/bundle
+    environment:
+      TZ: Asia/Tokyo
+      RAILS_ENV: development
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
