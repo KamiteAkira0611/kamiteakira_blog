@@ -18,3 +18,12 @@ $ cd docker
 $ ./command stop
 ```
 
+## webpack not foundと言われた場合
+```
+$ docker-compose run rails bundle exec rails webpacker:install
+```
+
+## 管理画面の作成方法
+```
+$ rails generate administrate:install
+```
