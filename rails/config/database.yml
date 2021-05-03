@@ -84,6 +84,6 @@ test:
 #
 production:
   <<: *default
-  adapter: postgres
+  adapter: postgresql
   encoding: unicode
   pool: 5
