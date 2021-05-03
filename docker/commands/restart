@@ -1,1 +1,1 @@
-docker-compose restart
+docker-compose stop rails react && docker-compose up -d rails react
