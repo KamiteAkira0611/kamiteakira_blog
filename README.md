@@ -18,3 +18,7 @@ $ cd docker
 $ ./command stop
 ```
 
+## webpack not foundと言われた場合
+```
+# docker-compose run web bundle exec rails webpacker:install
+```
