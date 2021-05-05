@@ -1,0 +1,33 @@
+.header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  overflow: hidden;
+
+  .container {
+    max-width: 1200px;
+    padding: 0 30px;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+
+  .header_item {
+    color: white;
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    p {
+      font-weight: bold;
+      font-size: 26px;
+      margin-left: 3px;
+    }
+  }
+}
