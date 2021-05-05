@@ -1,11 +1,6 @@
 import Head from "next/head";
-import Layout from "../components/Layout";
+import Layout from "../layouts";
 
 export default function Home() {
-  return (
-    <Layout title="HOME">
-      <h1>hello next js</h1>
-      <h1>hello next js</h1>
-    </Layout>
-  );
+  return <Layout title="HOME"></Layout>;
 }
