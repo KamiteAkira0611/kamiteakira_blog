@@ -1,1 +1,1 @@
-docker-compose exec rails bash
+docker compose exec rails bash
