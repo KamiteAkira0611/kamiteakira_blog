@@ -1,0 +1,50 @@
+.contents {
+  background-color: #f5f5f5;
+}
+
+.PostDetail {
+  background-color: white;
+  padding: 18px 0;
+
+  p {
+    line-height: 1.8;
+    margin: 24px 18px;
+    letter-spacing: 0.5px;
+  }
+  h2 {
+    margin: 10px 18px;
+  }
+}
+
+.title {
+  padding: 37px 0px;
+
+  .top_img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: block;
+    margin: 0 auto 17px;
+  }
+
+  h1 {
+    margin: 0 18px 18px;
+  }
+
+  .dates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .date {
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+      letter-spacing: 0.5px;
+      color: #636363;
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+}
