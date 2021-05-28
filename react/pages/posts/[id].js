@@ -7,13 +7,6 @@ export default function Post({ post = {} }) {
   return (
     <Layout title={post.title}>
       <PostDetailsView post={post} />
-
-      {/* <h1>{post.title}</h1>
-      <p>{post.body}</p> */}
-
-      <Link href="/posts">
-        <p>back</p>
-      </Link>
     </Layout>
   );
 }

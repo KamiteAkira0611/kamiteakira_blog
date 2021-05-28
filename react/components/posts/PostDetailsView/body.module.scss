@@ -17,21 +17,33 @@
     border-radius: 0;
   }
 
+  > :first-child {
+    margin-top: 0;
+  }
+
   p {
     line-height: 1.8;
     margin: 0px 30px 24px;
     letter-spacing: 0.5px;
     font-size: 15px;
     @media screen and (max-width: 700px) {
-      margin: 0px 18px 24px;
+      margin-left: 18px;
+      margin-right: 18px;
     }
   }
 
   h2 {
-    margin: 0px 30px 10px;
+    margin: 50px 30px 15px;
     font-size: 23px;
     @media screen and (max-width: 700px) {
-      margin: 0px 18px 10px;
+      margin-left: 18px;
+      margin-right: 18px;
     }
+  }
+
+  a {
+    font-weight: bold;
+    color: #0f83fd;
+    text-decoration: none;
   }
 }

@@ -3,7 +3,7 @@ import styles from "./body.module.scss";
 function Body() {
   return (
     <div className={styles.PostDetail}>
-      <h2>
+      <h2 id="はじめに">
         <a href="/" rel="nofollow"></a> はじめに
       </h2>
       <p>
@@ -22,7 +22,7 @@ function Body() {
         という freee
         の配信を楽しく拝見してたんですが、よく見てみるとエンジニアの方(のぶじゃすさん)がラジオパーソナリティをやられていて、ラジオパーソナリティやるの面白そう！と思い会社に了解も取らずに勝手に社内で似たようなものを企画してみることに(笑)
       </p>
-      <h2>
+      <h2 id="企画したもの">
         <a href="/" rel="nofollow"></a> 企画したもの
       </h2>
       <p>
