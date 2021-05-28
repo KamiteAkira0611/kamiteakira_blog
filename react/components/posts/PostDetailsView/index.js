@@ -1,12 +1,17 @@
-import styles from "./style.module.scss";
+import styles from "./index.module.scss";
 import Body from "./body";
 import Title from "./tilte";
+import Side from "./side";
 
 const PostDetailsView = () => {
   return (
     <div className={styles.contents}>
       <Title />
-      <Body />
+
+      <div className={styles.b}>
+        <Body />
+        <Side />
+      </div>
     </div>
   );
 };
