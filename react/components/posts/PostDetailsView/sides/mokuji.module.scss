@@ -1,0 +1,28 @@
+.mokuji {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgb(67 133 187 / 7%);
+  padding: 30px;
+  position: sticky;
+  top: 30px;
+  @media screen and (max-width: 950px) {
+    display: none;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 3px;
+      font-weight: bold;
+      color: gray;
+    }
+  }
+}
