@@ -1,4 +1,4 @@
-import styles from "./style.module.scss";
+import styles from "./body.module.scss";
 
 function Body() {
   return (

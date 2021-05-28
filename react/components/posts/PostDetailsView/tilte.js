@@ -1,7 +1,7 @@
 import React from "react";
 import TodayIcon from "@material-ui/icons/Today";
 import UpdateIcon from "@material-ui/icons/Update";
-import styles from "./style.module.scss";
+import styles from "./title.module.scss";
 import Image from "next/image";
 
 const Title = () => {

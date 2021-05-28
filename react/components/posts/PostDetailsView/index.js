@@ -8,7 +8,7 @@ const PostDetailsView = () => {
     <div className={styles.contents}>
       <Title />
 
-      <div className={styles.b}>
+      <div>
         <Body />
         <Side />
       </div>

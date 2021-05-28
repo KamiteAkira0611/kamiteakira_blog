@@ -1,23 +1,6 @@
-.contents {
-  background-color: #f5f5f5;
-}
-
-.PostDetail {
-  background-color: white;
-  padding: 18px 0;
-
-  p {
-    line-height: 1.8;
-    margin: 24px 18px;
-    letter-spacing: 0.5px;
-  }
-  h2 {
-    margin: 10px 18px;
-  }
-}
-
 .title {
   padding: 37px 0px;
+  text-align: center;
 
   .top_img {
     width: 60px;
@@ -29,6 +12,17 @@
 
   h1 {
     margin: 0 18px 18px;
+    display: inline-block;
+    text-align: start;
+    max-width: calc(100% - 122px);
+    font-size: 30px;
+    @media screen and (max-width: 700px) {
+      max-width: calc(100% - 66px);
+      font-size: 21px;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: calc(100% - 36px);
+    }
   }
 
   .dates {

@@ -1,9 +1,3 @@
-@mixin sp() {
-  @media screen and (max-width: 480px) {
-    @content;
-  }
-}
-
 .header {
   height: 65px;
   display: flex;
@@ -12,16 +6,22 @@
   width: 100%;
   overflow: hidden;
 
-  @include sp() {
+  @media screen and (max-width: 480px) {
     height: 50px;
   }
 
   .container {
     max-width: 1200px;
-    padding: 0 18px;
+    padding: 0 60px;
     width: 100%;
     margin: auto;
     height: 100%;
+    @media screen and (max-width: 700px) {
+      padding: 0 33px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 0 18px;
+    }
   }
 
   .header_item {
@@ -39,7 +39,7 @@
       position: relative;
       height: 25px;
       width: 30px;
-      @include sp() {
+      @media screen and (max-width: 480px) {
         height: 20px;
         width: 23px;
       }
@@ -49,7 +49,7 @@
       font-weight: bold;
       font-size: 26px;
       margin-left: 5px;
-      @include sp() {
+      @media screen and (max-width: 480px) {
         font-size: 20px;
       }
     }
