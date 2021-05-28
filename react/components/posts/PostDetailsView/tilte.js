@@ -4,7 +4,7 @@ import UpdateIcon from "@material-ui/icons/Update";
 import styles from "./title.module.scss";
 import Image from "next/image";
 
-const Title = () => {
+const Title = ({ title }) => {
   return (
     <div className={styles.title}>
       <div className={styles.top_img}>
@@ -15,7 +15,7 @@ const Title = () => {
           objectFit="contain"
         />
       </div>
-      <h1>Kubernetesの仮想クラスタについてとりとめもなく語る</h1>
+      <h1>{title}</h1>
       <div className={styles.dates}>
         <div className={styles.date}>
           <TodayIcon />

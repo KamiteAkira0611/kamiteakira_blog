@@ -1,11 +1,12 @@
 import styles from "./body.module.scss";
 
-function Body() {
+function Body({ html }) {
   return (
     <div className={styles.PostDetail}>
       <h2 id="はじめに">
         <a href="/" rel="nofollow"></a> はじめに
       </h2>
+      <div dangerouslySetInnerHTML={html} />
       <p>
         うちの会社ではエンジニアは総勢で 20~30
         人ぐらいおり(自信ない)、プロダクトごとにチームを分けて開発しています。また、コロナ渦になるちょっと前ぐらいからリモートでの開発が制度として導入され、コロナ渦になってからは大体のチームがフルリモートで日々開発しています。

@@ -1,7 +1,11 @@
-import React from "react";
-
+import dynamic from "next/dynamic";
+const DynamicWrite = dynamic(() => import("components/write"));
 const write = () => {
-  return <div></div>;
+  return (
+    <div>
+      <DynamicWrite />
+    </div>
+  );
 };
 
 export default write;

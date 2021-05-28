@@ -3,13 +3,13 @@ import Body from "./body";
 import Title from "./tilte";
 import Side from "./side";
 
-const PostDetailsView = () => {
+const PostDetailsView = ({ post }) => {
   return (
     <div className={styles.contents}>
-      <Title />
+      <Title title={post.title} />
 
       <div className={styles.wrapper}>
-        <Body />
+        <Body html={post.html} />
         <Side />
       </div>
     </div>
