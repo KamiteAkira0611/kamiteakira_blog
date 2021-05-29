@@ -4,7 +4,7 @@ import UpdateIcon from "@material-ui/icons/Update";
 import styles from "./title.module.scss";
 import Image from "next/image";
 
-const Title = ({ title }) => {
+const Title = ({ title = "テスト" }) => {
   return (
     <div className={styles.title}>
       <div className={styles.top_img}>
